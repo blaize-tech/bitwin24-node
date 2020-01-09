@@ -81,7 +81,7 @@ bool fCheckBlockIndex = false;
 bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
-const int START_HEIGHT_REWARD_BASED_ON_MN_COUNT = 6000;
+const int START_HEIGHT_REWARD_BASED_ON_MN_COUNT = 57515;
 
 unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
@@ -1778,7 +1778,7 @@ int64_t GetPhaseMultiplier(int nHeight)
     else if (nMoneySupply < 18000000 * COIN)
         currentPhaseMultiplier = 500;
     else if (nMoneySupply < 19000000 * COIN)
-        currentPhaseMultiplier = 130;
+        currentPhaseMultiplier = 125;
     else if (nMoneySupply >= 19000000 * COIN)
         currentPhaseMultiplier = 60;
 
